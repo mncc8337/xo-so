@@ -1,0 +1,66 @@
+.center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 64;
+}
+
+.column {
+    float: left;
+    width: 58%;
+}
+.column-img {
+    float: left;
+    width: 21%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.giai1 { grid-area: giai1; }
+.giai2 { grid-area: giai2; }
+.giai3 { grid-area: giai3; }
+.giai5 { grid-area: giai4; }
+
+
+.giai1-so1 { grid-area: so11; }
+.giai2-so1 { grid-area: so21; }
+.giai2-so2 { grid-area: so22; }
+.giai3-so1 { grid-area: so31; }
+.giai3-so2 { grid-area: so32; }
+.giai3-so3 { grid-area: so33; }
+.giai4-so1 { grid-area: so41; }
+.giai4-so2 { grid-area: so42; }
+.giai4-so3 { grid-area: so43; }
+.giai4-so4 { grid-area: so44; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'giai1 so11 so11 so11 so11'
+      'giai2 so21 so21 so22 so22'
+      'giai3 so31 so32 so33 so33'
+      'giai4 so41 so42 so43 so44';
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+  
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+button {
+    width: 100%;
+    height: 100%;
+}
