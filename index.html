@@ -1,22 +1,44 @@
-<script type="text/javascript" src="script.js"></script>
-<link rel="stylesheet" href="style.css">
-<div class="center">
-    <h class="title">
-        sổ xố vui xuân
-    </h>
-</div>
+<head>
+    <!-- src -->
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+    
+    <title>Xổ số vui xuân</title>
+</head>
+
+<body>
 <div class="row">
-    <image src="trai.png" width="100px" style="float: left" class="column-img"></image>
+    <image src="trai.png" class="column-img">
     <div class="column">
+        <h class="title">xổ số vui xuân</h>
         <div class="grid-container">
-            <div class="giai1">1</div><div class="giai1-so1"><button onclick="reveal()"></div>
-            <div class="giai2">2</div><div class="giai2-so1"><button onclick="reveal()"></div><div class="giai2-so2"><button onclick="reveal()"></button></div>
-            <div class="giai3">3</div><div class="giai3-so1"><button onclick="reveal()"></div><div class="giai3-so2"><button onclick="reveal()"></button></div><div class="giai3-so3"><button onclick="reveal()"></button></div>
-            <div class="giai4">4</div><div class="giai4-so1"><button onclick="reveal()"></div><div class="giai4-so2"><button onclick="reveal()"></button></div><div class="giai4-so3"><button onclick="reveal()"></button></div><div class="giai4-so4"><button onclick="reveal()"></button></div>
-          </div>
-    </div><br>
-    <image src="phai.png" width="100px" style="float: right" class="column-img"></image>
-</div>
+            <div class="giai0">ĐB</div>
+            <div class="giai0-so1"><button onclick="reveal(6, this)"></div>
 
-<body style="background-color: tomato"></body>
+            <div class="giai1">1</div>
+            <div class="giai1-so1"><button onclick="reveal(6, this)"></div>
+
+            <div class="giai2">2</div>
+            <div class="giai2-so1"><button onclick="reveal(6, this)"></div>
+            <div class="giai2-so2"><button onclick="reveal(6, this)"></div>
+
+            <div class="giai3">3</div>
+            <div class="giai3-so1"><button onclick="reveal(5, this)"></div>
+            <div class="giai3-so2"><button onclick="reveal(5, this)"></div>
+            <div class="giai3-so3"><button onclick="reveal(5, this)"></div>
+            
+            <div class="giai4">4</div>
+            <div class="giai4-so1"><button onclick="reveal(4, this)"></div>
+            <div class="giai4-so2"><button onclick="reveal(4, this)"></div>
+            <div class="giai4-so3"><button onclick="reveal(4, this)"></div>
+            <div class="giai4-so4"><button onclick="reveal(4, this)"></div>
+        </div>
+    </div>
+    <image src="phai.png" class="column-img">
+</div>
+</body>

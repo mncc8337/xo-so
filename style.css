@@ -1,66 +1,92 @@
-.center {
+/* title */
+.title {
+    font-family: "Protest Riot", sans-serif;
+    font-style: normal;
+    font-size: 64px;
+    color: burlywood;
+
     width: 100%;
+    height: 10%;
     display: flex;
     justify-content: center;
 }
 
-.title {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 64;
+/* body */
+body {
+    background-color: #ff5555;
+    margin-top: 10%;
 }
 
+/* layout */
 .column {
     float: left;
-    width: 58%;
+    width: 70%;
 }
 .column-img {
     float: left;
-    width: 21%;
+    width: 15%;
+    height: 70%;
 }
-
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
 
-.giai1 { grid-area: giai1; }
-.giai2 { grid-area: giai2; }
-.giai3 { grid-area: giai3; }
-.giai5 { grid-area: giai4; }
+.giai0 {grid-area: giai0;}
+.giai1 {grid-area: giai1;}
+.giai2 {grid-area: giai2;}
+.giai3 {grid-area: giai3;}
+.giai5 {grid-area: giai4;}
 
 
-.giai1-so1 { grid-area: so11; }
-.giai2-so1 { grid-area: so21; }
-.giai2-so2 { grid-area: so22; }
-.giai3-so1 { grid-area: so31; }
-.giai3-so2 { grid-area: so32; }
-.giai3-so3 { grid-area: so33; }
-.giai4-so1 { grid-area: so41; }
-.giai4-so2 { grid-area: so42; }
-.giai4-so3 { grid-area: so43; }
-.giai4-so4 { grid-area: so44; }
+.giai0-so1 {grid-area: so01;}
+
+.giai1-so1 {grid-area: so11;}
+
+.giai2-so1 {grid-area: so21;}
+.giai2-so2 {grid-area: so22;}
+
+.giai3-so1 {grid-area: so31;}
+.giai3-so2 {grid-area: so32;}
+.giai3-so3 {grid-area: so33;}
+
+.giai4-so1 {grid-area: so41;}
+.giai4-so2 {grid-area: so42;}
+.giai4-so3 {grid-area: so43;}
+.giai4-so4 {grid-area: so44;}
 
 .grid-container {
     display: grid;
     grid-template-areas:
-      'giai1 so11 so11 so11 so11'
-      'giai2 so21 so21 so22 so22'
-      'giai3 so31 so32 so33 so33'
-      'giai4 so41 so42 so43 so44';
+        'giai0 so01 so01 so01 so01 so01 so01 so01 so01 so01 so01 so01 so01'
+        'giai1 so11 so11 so11 so11 so11 so11 so11 so11 so11 so11 so11 so11'
+        'giai2 so21 so21 so21 so21 so21 so21 so22 so22 so22 so22 so22 so22'
+        'giai3 so31 so31 so31 so31 so32 so32 so32 so32 so33 so33 so33 so33'
+        'giai4 so41 so41 so41 so42 so42 so42 so43 so43 so43 so44 so44 so44';
     gap: 10px;
-    background-color: #2196F3;
+    background-color: #ff3333;
     padding: 10px;
 }
   
 .grid-container > div {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #ffcccc;
     text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
+    padding: 20px;
+    font-size: 32px;
+    color: brown;
 }
 
 button {
     width: 100%;
     height: 100%;
+    background-color: #00000000;
+    border-width: 0;
+    font-family: "Courier New", monospace;
+    font-size: 32;
+    color: brown;
+}
+
+button:hover {
+    background-color: #ffffff;
 }

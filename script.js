@@ -10,6 +10,7 @@ function rd(n) {
     return num;
 }
 
-function reveal() {
-    console.log(rd(3));
+function reveal(n, element) {
+    var num = rd(n);
+    element.innerHTML = num;
 }
