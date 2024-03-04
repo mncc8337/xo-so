@@ -9,6 +9,7 @@
     height: 10%;
     display: flex;
     justify-content: center;
+    margin-bottom: 10;
 }
 
 /* body */
@@ -59,11 +60,12 @@ body {
 .grid-container {
     display: grid;
     grid-template-areas:
-        'giai0 so01 so01 so01 so01 so01 so01 so01 so01 so01 so01 so01 so01'
-        'giai1 so11 so11 so11 so11 so11 so11 so11 so11 so11 so11 so11 so11'
-        'giai2 so21 so21 so21 so21 so21 so21 so22 so22 so22 so22 so22 so22'
+        'giai4 so41 so41 so41 so42 so42 so42 so43 so43 so43 so44 so44 so44'
         'giai3 so31 so31 so31 so31 so32 so32 so32 so32 so33 so33 so33 so33'
-        'giai4 so41 so41 so41 so42 so42 so42 so43 so43 so43 so44 so44 so44';
+        'giai2 so21 so21 so21 so21 so21 so21 so22 so22 so22 so22 so22 so22'
+        'giai1 so11 so11 so11 so11 so11 so11 so11 so11 so11 so11 so11 so11'
+        'giai0 so01 so01 so01 so01 so01 so01 so01 so01 so01 so01 so01 so01';
+
     gap: 10px;
     background-color: #ff3333;
     padding: 10px;
@@ -84,6 +86,7 @@ button {
     border-width: 0;
     font-family: "Courier New", monospace;
     font-size: 32;
+    font-weight: 1000;
     color: brown;
 }
 
